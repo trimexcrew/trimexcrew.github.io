@@ -13,4 +13,4 @@ video_width: 1920
 video_height: 1080
 
 ---
-Es el nombre de la instalación que exponemos como Trimex en BudLab Santiago. Se trata de un espejo digital interactivo. El usuario entra en la instalación y, frente a el, aparece su reflejo digital. Éste reacciona según los movimientos corporales de usuario. La interacción pretende evidenciar la relación consciente entre el humano y la maquina. La instalaciÓn pone en evidencia la relación lúdica que genera una experiencia específica.
+**Ratio Reflections** es un espejo digital interactivo que fue expuesto en BudLab Santiago, 2016. El usuario entra en la instalación y, frente a él, aparece su reflejo digital que reacciona según los movimientos corporales de usuario. La interacción pretende evidenciar la relación consciente entre el humano y la máquina y la relación lúdica que genera esta experiencia específica.
