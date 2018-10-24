@@ -1,0 +1,13 @@
+{% if include.post.video_vimeo  %}
+<div class="video-header">
+  <!-- width="{{include.post.video_width}}px" height="{{include.post.video_height}}px" -->
+  <!-- width="100%" height="100%" -->
+	<iframe src="https://player.vimeo.com/video/{{include.post.video_vimeo}}?portrait=0" frameborder="0"  width="{{include.post.video_width}}px" height="{{include.post.video_height}}px" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+{% else  %}
+{% if include.post.main_img and include.post.imgs_folder %}
+<div class="img_poster">
+	<img src={% include post_img.html post=include.post %} width="100%" height="100%"></img>
+</div>
+{% endif  %}
+{% endif  %}

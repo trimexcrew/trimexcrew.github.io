@@ -1,0 +1,21 @@
+{
+  "name": "trimexcrew.github.io",
+  "version": "1.0.0",
+  "description": "Trimex portfolio",
+  "main": "index.js",
+  "repository": "https://github.com/trimexcrew/trimexcrew.github.io",
+  "author": "TrimexCrew",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "child_process": "^1.0.2",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-sass": "^3.2.1",
+    "imagemin-pngquant": "^5.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
