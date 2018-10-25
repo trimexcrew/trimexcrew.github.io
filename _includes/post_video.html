@@ -1,9 +1,14 @@
 {% if include.post.video_vimeo  %}
-<div class="video-header">
+<!-- <div class="video-header"> -->
   <!-- width="{{include.post.video_width}}px" height="{{include.post.video_height}}px" -->
   <!-- width="100%" height="100%" -->
-	<iframe src="https://player.vimeo.com/video/{{include.post.video_vimeo}}?portrait=0" frameborder="0"  width="{{include.post.video_width}}px" height="{{include.post.video_height}}px" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
+	<!-- <iframe src="https://player.vimeo.com/video/{{include.post.video_vimeo}}?portrait=0" frameborder="0"  width="{{include.post.video_width}}px" height="{{include.post.video_height}}px" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+	<!-- <div style="padding:56.25% 0 0 0;position:relative;">
+		<iframe src="https://player.vimeo.com/video/{{include.post.video_vimeo}}" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
+		<script src="https://player.vimeo.com/api/player.js"></script>
+</div> -->
+  {% include vimeo.html video_id=include.post.video_vimeo %}
 {% else  %}
 {% if include.post.main_img and include.post.imgs_folder %}
 <div class="img_poster">

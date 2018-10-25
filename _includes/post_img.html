@@ -1,1 +1,5 @@
-{{"/posts_imgs/" | prepend: site.baseurl | append : include.post.imgs_folder | append : include.post.main_img}}
+{% if include.post.imgs_folder %}
+    {{"/posts_imgs/" | prepend: site.baseurl | append : include.post.imgs_folder | append : include.post.main_img}}
+{% else %}
+    {{"/posts_imgs/" | prepend: site.baseurl | append : include.post.main_img}}
+{% endif %}
