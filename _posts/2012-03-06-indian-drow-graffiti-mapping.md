@@ -1,4 +1,5 @@
 ---
+date: 2012-03-06 00:00:00 -0400
 layout: post
 status: publish
 published: true
@@ -18,6 +19,7 @@ categories:
 - IndianDrow
 tags: []
 ---
+date: 2012-03-06 00:00:00 -0400
 <p><iframe src="http://player.vimeo.com/video/37216491?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0179" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>
 <p>[flickrset id="72157629430165351" thumbnail="thumbnail" photos="" overlay="true" size="large"] </p>
 <p>Graffiti: cucho<br />

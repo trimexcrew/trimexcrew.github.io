@@ -1,4 +1,5 @@
 ---
+date: 2016-08-24 00:00:00 -0400
 layout: post
 title: Contacto Espacial – Sonar Barcelona
 
@@ -13,6 +14,7 @@ video_width: 1920
 video_height: 1080
 
 ---
+date: 2016-08-24 00:00:00 -0400
 **Contacto Espacial** es una instalación visual interactiva que tiene como idea principal introducir al visitante al mundo de los astros de manera presencial.
 Esta obra fue montada en el congreso internacional Sónar +D dentro del Festival Sónar en la Feria de MontjuÏc de Barcelona, España.
 

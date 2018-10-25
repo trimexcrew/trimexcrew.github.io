@@ -1,4 +1,5 @@
 ---
+date: 2013-04-03 00:00:00 -0400
 layout: post
 status: publish
 published: true
@@ -10,6 +11,7 @@ imgs_folder: bvam/
 
 
 ---
+date: 2013-04-03 00:00:00 -0400
 
 Fotos: Josefina Lagos
 
