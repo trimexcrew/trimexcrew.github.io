@@ -35,4 +35,3 @@ Créditos:
 * Foto: **Josefina Lagos**
 
 {% flickr_photoset 72157632163975830 %}
-<!-- <p> [flickrset id="72157632163975830" thumbnail="thumbnail" photos="9" overlay="true" size="small"] </p> -->

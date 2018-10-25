@@ -10,5 +10,5 @@ categories:
 tags: []
 ---
 
-<p><iframe src="http://player.vimeo.com/video/32469213?color=00f014" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>
-<p>En octubre del 2011 participamos en la proyecci&oacute;n visual de BastarFest en el teatro Caupolic&aacute;n. La instalaci&oacute;n consisti&oacute; en 15 metros lineales sobre una decoraci&oacute;n de muro. Las visuales mostraban de equalizadores gr&aacute;ficos que reaccionaban a tiempo real de acuerdo a la m&uacute;sica del evento. Este espect&aacute;culo mapping era acompa&ntilde;ado de visuales complementarias en 4 televisores plasma.</p>
+video_vimeo: 32469213
+<p>En octubre del 2011 participamos en la proyección visual de BastarFest en el teatro Caupolicán. La instalación consistió en 15 metros lineales sobre una decoración de muro. Las visuales mostraban de equalizadores gráficos que reaccionaban a tiempo real de acuerdo a la música del evento. Este espectáculo mapping era acompañado de visuales complementarias en 4 televisores plasma.</p>

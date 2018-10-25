@@ -12,7 +12,7 @@ tags: []
 ---
 
 <p>[vimeo 25572742 630 320]</p>
-<p>[flickrset id="72157627216380639" thumbnail="thumbnail" photos="12" overlay="true" size="large"]</p>
+<p>{% flickr_photoset 72157627216380639 %}
 <p>Esta expo art se hizo el dia 15 de Junio, en Terraza Isidora Goyenechea.</p>
 <p>Artistas:</p>
 <p>Cucho: flickr.com/​photos/​lacosa/​<br />
