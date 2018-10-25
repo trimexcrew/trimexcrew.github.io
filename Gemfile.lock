@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     activesupport (4.2.10)
       i18n (~> 0.7)
@@ -14,6 +15,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
     ffi (1.9.25)
+    flickraw (0.9.9)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     html-pipeline (2.8.4)
@@ -79,6 +81,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  flickraw
   jekyll-paginate
   jekyll-sitemap
   jemoji
