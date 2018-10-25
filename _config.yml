@@ -33,3 +33,9 @@ paginate: 8
 paginate_path: "/page/:num"
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+flickr:
+  cache_dir:       ./_cache/flickr
+  api_key:          b0a61e6143642dd2572b22d5c721c2e3
+  shared_secret:    baeaaa18d7708aca
+  access_token:     72157702788372465-c37dc8b44babbada
+  access_secret:    5c11dfe024a953e0
