@@ -12,7 +12,7 @@ imgs_folder: jaguarFile/
 video_vimeo: 59147159
 
 ---
-date: 2013-04-08 00:00:00 -0400
+
 ## Work Abstract - English
 The cybernetic thought relates to human and machine in a sensible and pragmatic context. To give intelligence to the machine is the next big challenge since the creation of the algorithm, with Babage and Lovelace as fathers of the differential machine and the first programming code. The artificial intelligence turns into the new alchemy, the container of the human collective memory, out of the oral tradition, a quantic jump since the invention of writing towards dynamic contents. The digital world is the fake sensible world. While the learning process of machines keeps growing, Google deforms our collective memory, Facebook attempts against our intimacy, turning our life into trade products in a society of constant simulation of freedom, the great success of the technocrat and neoliberal system.
 

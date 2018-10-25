@@ -4,22 +4,12 @@ layout: post
 status: publish
 published: true
 title: IMPERFECTO Live Cinema
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
 categories:
 - vertx + Minimale
 tags: []
 ---
-date: 2012-03-06 00:00:00 -0400
+
 <p><iframe src="http://player.vimeo.com/video/39075633?color=757575" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>
 <p>[flickrset id="72157629430142127" thumbnail="thumbnail" photos="12" overlay="true" size="large"]</p>
 <p>MINIMALE + VERTX.</p>

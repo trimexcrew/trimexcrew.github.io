@@ -13,7 +13,7 @@ client: Nintendo Chile
 video_vimeo: 54790588
 
 ---
-date: 2013-04-11 00:00:00 -0400
+
 
 Implementación introductoria realizada para nintendo donde se muestra la historia de las consolas. Una satisfactoria experiencia para todo el equipo Trimex.
 
