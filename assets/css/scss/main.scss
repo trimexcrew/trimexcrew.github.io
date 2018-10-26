@@ -119,7 +119,7 @@ table tfoot td {
   // background-color: #fff;
 }
  .article-page {
-   
+
  }
 ::-moz-selection {
   background: rgba(38, 57, 89, 0.8);
@@ -142,6 +142,52 @@ table tfoot td {
 .page-content {
   max-width: 900px;
 }
+
+.img_poster {
+  width:100%;
+  overflow: hidden;
+}
+
+.galery:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+.galery{
+
+  width: 80%;
+  max-width: 1000px;
+
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-width: 1px;
+  border-top-color: rgb(250,250,250);
+  border-top-style: solid;
+  text-align: justify;
+  font-size: 0.1px; /* IE 9 & 10 don't like font-size: 0; */
+
+}
+
+.galery_thumb{
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 200px;
+  max-height: 200px;
+}
+.galery_thumb img{
+  padding: 10px;
+}
+
+.post-content img{
+   width: 100%;
+   max-width: 600px;
+  margin:auto;
+}
+
+
+
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
 @import 'parts/home-page';
 

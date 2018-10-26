@@ -910,6 +910,50 @@ table tfoot td {
   max-width: 900px;
 }
 
+.img_poster {
+  width: 100%;
+  overflow: hidden;
+}
+
+.galery:after {
+  content: '';
+  width: 100%;
+  /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+.galery {
+  width: 80%;
+  max-width: 1000px;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-width: 1px;
+  border-top-color: #fafafa;
+  border-top-style: solid;
+  text-align: justify;
+  font-size: 0.1px;
+  /* IE 9 & 10 don't like font-size: 0; */
+}
+
+.galery_thumb {
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.galery_thumb img {
+  padding: 10px;
+}
+
+.post-content img {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
 .sidebar {
   display: -webkit-box;
@@ -1084,9 +1128,10 @@ footer .copyright {
 }
 
 .post {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 1.5rem;
+  width: 25%;
+  min-width: 250px;
+  min-height: 250px;
+  height: 250px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1100,7 +1145,6 @@ footer .copyright {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  min-height: 11rem;
   background: #000000;
   overflow: hidden;
   -webkit-transition: all .3s ease;
@@ -1108,6 +1152,9 @@ footer .copyright {
   transition: all .3s ease;
   -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
           box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: 50% 50%;
 }
 
 .post:hover {
@@ -1118,17 +1165,7 @@ footer .copyright {
           box-shadow: 0 15px 45px -10px rgba(10, 16, 34, 0.2);
 }
 
-.post .post-thumbnail {
-  width: 30%;
-  max-width: 100%;
-  min-height: 11rem;
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-position: 50% 50%;
-}
-
 .post .post-content {
-  padding: 1rem;
   width: 70%;
 }
 
@@ -1139,8 +1176,14 @@ footer .copyright {
 
 .post .post-content .post-title {
   margin: 0 0 10px;
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 900;
+  color: #fafafa;
+}
+
+.post .post-content .post-title a {
+  text-decoration: none;
+  color: #fafafa;
 }
 
 .post .post-content p {
