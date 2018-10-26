@@ -923,8 +923,6 @@ table tfoot td {
 }
 
 .galery {
-  width: 80%;
-  max-width: 1000px;
   padding-top: 15px;
   margin-top: 20px;
   margin-left: auto;
@@ -944,13 +942,8 @@ table tfoot td {
   max-height: 200px;
 }
 
-.galery_thumb img {
-  padding: 10px;
-}
-
 .post-content img {
   width: 100%;
-  max-width: 600px;
   margin: auto;
 }
 
@@ -1128,7 +1121,7 @@ footer .copyright {
 }
 
 .post {
-  width: 25%;
+  width: 100%;
   min-width: 250px;
   min-height: 250px;
   height: 250px;
@@ -1147,36 +1140,28 @@ footer .copyright {
           align-items: stretch;
   background: #000000;
   overflow: hidden;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-  -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
-          box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: 50% 50%;
 }
 
-.post:hover {
-  -webkit-transform: translate(0px, -2px);
-      -ms-transform: translate(0px, -2px);
-          transform: translate(0px, -2px);
-  -webkit-box-shadow: 0 15px 45px -10px rgba(10, 16, 34, 0.2);
-          box-shadow: 0 15px 45px -10px rgba(10, 16, 34, 0.2);
+.post .post-content .post-date {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 80px;
 }
 
-.post .post-content {
-  width: 70%;
-}
-
-.post .post-content .post-date,
 .post .post-content .post-words {
   font-size: 12px;
 }
 
 .post .post-content .post-title {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
   margin: 0 0 10px;
-  font-size: 22px;
+  font-size: 80px;
   font-weight: 900;
   color: #fafafa;
 }
@@ -1423,9 +1408,7 @@ a.newer-posts:hover {
             justify-content: space-between;
     width: 100%;
     padding: 10px;
-    background-color: #ffffff;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
-            box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+    background-color: #000000;
   }
   .sidebar footer {
     margin-bottom: 10px;
