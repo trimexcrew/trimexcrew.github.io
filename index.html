@@ -9,15 +9,26 @@ layout: main
   onclick="window.location='{{post.url | prepend: site.baseurl}}';">
   <!-- <a href="{{post.url | prepend: site.baseurl}}" style="width: 100%; height:100%"> -->
   <div class="post-content">
-    <h2 class="post-title">{{post.title}}</a></h2>
-    {% comment %}
-    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    {% endcomment %}
+    <!-- <h2 class="post-title"> -->
+      <a class="post-title" href="{{post.url | prepend: site.baseurl}}">
+        {{post.title}}
+      </a>
+    <!-- </h2> -->
+
+    <!-- {% comment %} -->
+
+    <!-- {% endcomment %} -->
+    <span class="post-date">
+
+    {{ post.date | date: "[%Y]" }}
+    </span>
+
     {% comment %}
     <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
     {% endcomment %}
     {% comment %}
     <span class="post-date">
+
     {% include fecha.html post=post %}
     </span>
     {% endcomment %}
