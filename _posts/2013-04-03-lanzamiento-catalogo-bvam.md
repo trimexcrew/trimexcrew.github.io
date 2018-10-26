@@ -13,4 +13,4 @@ imgs_folder: bvam/
 
 Fotos: Josefina Lagos
 
-{% flickr_photoset 72157633221057309 %}
+{% include gallery.html flickr_set="72157633221057309" %}

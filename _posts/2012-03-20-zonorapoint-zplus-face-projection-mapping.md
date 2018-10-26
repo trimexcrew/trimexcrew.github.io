@@ -15,7 +15,7 @@ Créditos:
 * Arte + Mapping: **Vertx**
 
 
-{% flickr_photoset 72157629586239161 %}
+{% include gallery.html flickr_set="72157629586239161" %}
 
 
 {% include soundcloud.html track="10206641" %}

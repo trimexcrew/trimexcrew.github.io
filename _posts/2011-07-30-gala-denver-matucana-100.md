@@ -4,15 +4,15 @@ layout: post
 status: publish
 published: true
 title: Gala Denver Matucana 100
+video_vimeo: 27080544
 
-categories:
-- Nuestros Proyectos
-- Gala Denver Matucana 100
 tags: []
 ---
+En esta ocasión hicimos una escultura mapping para nuestra banda amiga Denver, en su gala, en Matucana 100. 
 
-video_vimeo: 27080544
-<p>{% flickr_photoset 72157627340659136 %}
-<p>En esta ocación hicimos una escultura mapping para nuestra banda amiga denver en su gala, esto fue efectuado en matucana 100, una experiencia totalmente satisfactoria para el team vertx.</p>
-<p>duodenver.cl<br />
-vertx.cl</p>
+Una experiencia totalmente satisfactoria para el team vertx.
+
+duodenver.cl
+vertx.cl
+
+{% include gallery.html flickr_set="72157627340659136" %}

@@ -5,12 +5,13 @@ status: publish
 published: true
 title: Indian Drow, Graffiti + Mapping
 
-categories:
-- IndianDrow
 tags: []
+video_vimeo: 37216491
 ---
 
-video_vimeo: 37216491
-<p>{% flickr_photoset 72157629430165351 %}
-<p>Graffiti: cucho<br />
-Visuales + Mapping: Vertx </p>
+
+Graffiti: **Martín Avendaño AKA cucho**
+Visuales + Mapping: **Vertx**
+
+
+{% include gallery.html flickr_set="72157629430165351" %}

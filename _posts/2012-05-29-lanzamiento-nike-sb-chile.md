@@ -9,4 +9,6 @@ tags: []
 video_vimeo: 43070995
 ---
 
-En esta oportunidad tuvimos el agrado de trabajar con la marca Nike. Mappeamos 2 esculturas de zapatillas de 2.4 mts. aprox. más un muro de fondo de 60mt x 8mt. Utilizamos las técnica de Mesh Warp Mapping.
+En esta oportunidad tuvimos el agrado de trabajar con la marca Nike.
+
+Mappeamos 2 esculturas de zapatillas de 2.4 mts. aprox. más un muro de fondo de 60mt x 8mt, utilizando la técnica de Mesh Warp Mapping.

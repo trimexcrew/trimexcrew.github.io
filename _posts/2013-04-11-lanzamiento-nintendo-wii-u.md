@@ -34,4 +34,4 @@ Créditos:
 * Cliente: **Nintendo Chile**
 * Foto: **Josefina Lagos**
 
-{% flickr_photoset 72157632163975830 %}
+{% include gallery.html flickr_set="72157632163975830" %}

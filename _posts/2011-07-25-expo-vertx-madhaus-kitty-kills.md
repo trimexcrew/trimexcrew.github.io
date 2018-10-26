@@ -5,19 +5,20 @@ status: publish
 published: true
 title: Expo Vertx + Madhaus + Kitty Kills
 
-categories:
-- Nuestros Proyectos
-- Expo Vertx + Madhaus + Kitty Kills
+video_vimeo: 25572742
 tags: []
 ---
 
-<p>[vimeo 25572742 630 320]</p>
-<p>{% flickr_photoset 72157627216380639 %}
-<p>Esta expo art se hizo el dia 15 de Junio, en Terraza Isidora Goyenechea.</p>
-<p>Artistas:</p>
-<p>Cucho: flickr.com/​photos/​lacosa/​<br />
-Mati: flickr.com/​photos/​santeria1984/​<br />
-Ubses: flickr.com/​photos/​spaceubses/​<br />
-Mono Lira: flickr.com/​monolira<br />
-vertx: vertx.cl</p>
-<p>Agradecemos a todos los que vinieron!</p>
+
+Esta expo art se hizo el dia 15 de Junio, en Terraza Isidora Goyenechea.
+
+Artistas:
+* Cucho: flickr.com/​photos/​lacosa/
+* Mati: flickr.com/​photos/​santeria1984/
+* Ubses: flickr.com/​photos/​spaceubses/​
+* Mono Lira: flickr.com/​monolira
+* Vertx:
+
+Agradecemos a todos los que vinieron!
+
+{% include gallery.html flickr_set="72157627216380639" %}

@@ -17,4 +17,4 @@ Creditos:
 * Construccion: **Juan Jose Aldunce**
 * Edición: **Juan Pablo Mendez**
 
-{% flickr_photoset 72157629318421138 %}
+{% include gallery.html flickr_set="72157629318421138" %}
