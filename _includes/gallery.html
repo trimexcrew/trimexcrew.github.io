@@ -1,0 +1,12 @@
+{% if include.flickr_set %}
+{% raw %}<div class="galery">{% endraw %}
+
+  		{% for img in site.data[include.flickr_set] %}
+  			<div class="galery_thumb">
+  			<a href="{{img.img}}" data-lightbox="img-set" data-title="img">
+  			<img src="{{img.thumb}}" width="100%" height="100%"/>
+  			</a>
+  			</div>
+  		{% endfor %}
+      {% raw %}</div>{% endraw %}
+{% endif %}

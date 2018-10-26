@@ -1,0 +1,9 @@
+<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/
+{% if include.playlist  %}
+playlists/{{include.playlist}}
+{% else if include.track  %}
+tracks/{{include.track}}
+{% else if include.user  %}
+users/{{include.user}}
+{% endif %}
+&color=%23000000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>

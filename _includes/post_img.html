@@ -1,4 +1,6 @@
-{% if include.post.imgs_folder %}
+{% if include.post.video_vimeo %}
+    {{"/posts_imgs/" | prepend: site.baseurl | append : "vimeo_thumbs/" | append : include.post.video_vimeo | append : ".jpg"}}
+{% else if include.post.imgs_folder %}
     {{"/posts_imgs/" | prepend: site.baseurl | append : include.post.imgs_folder | append : include.post.main_img}}
 {% else %}
     {{"/posts_imgs/" | prepend: site.baseurl | append : include.post.main_img}}
