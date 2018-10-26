@@ -1,18 +1,32 @@
 ---
 layout: main
 ---
-{% for post in paginator.posts %}
-<article class="post">
-  {% if post.main_img %}
-    <a class="post-thumbnail" style="background-image: url({% include post_img.html post=post %})" href="{{post.url | prepend: site.baseurl}}"></a>
-  {% endif %}
+
+
+{% for post in site.posts %}
+<!-- <a class="post-thumbnail"  href="{{post.url | prepend: site.baseurl}}"></a> -->
+<article class="post" style="background-image: url({% include post_img.html post=post %}); cursor: pointer;"
+  onclick="window.location='{{post.url | prepend: site.baseurl}}';">
+  <!-- <a href="{{post.url | prepend: site.baseurl}}" style="width: 100%; height:100%"> -->
   <div class="post-content">
+    <h2 class="post-title">{{post.title}}</a></h2>
+    {% comment %}
     <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    {% endcomment %}
+    {% comment %}
     <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+    {% endcomment %}
+    {% comment %}
+    <span class="post-date">
+    {% include fecha.html post=post %}
+    </span>
+    {% endcomment %}
+
+    <!-- <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span> -->
   </div>
+</a>
 </article>
+
 {% endfor %}
 
-{% include pagination.html %}
+<!-- {% include pagination.html %} -->
