@@ -186,7 +186,19 @@ table tfoot td {
   margin:auto;
 }
 
-
+.somos{
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  width: 100%
+  height 100%;
+  margin-bottom: 100px;
+  .mas_abajo{
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+  }
+}
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
 @import 'parts/home-page';
