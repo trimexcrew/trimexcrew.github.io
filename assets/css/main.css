@@ -968,7 +968,7 @@ pre code {
   bottom: 0;
   width: 240px;
   height: 100%;
-  padding: 20px 10px;
+  padding: 10px 10px;
   background-color: #000000;
 }
 
@@ -977,7 +977,14 @@ pre code {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.somos .trimex {
+  height: 250px;
+  line-height: 230px;
+  font-size: 100px;
 }
 
 .somos .mas_abajo {
