@@ -79,7 +79,9 @@
   .content-box {
     padding: 10px;
   }
-  .post {
+  .post{
+    background-attachment: scroll !important;
+  
     width: 98%;
     max-width: 100%;
     margin-left: 1%;

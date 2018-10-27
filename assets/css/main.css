@@ -1140,11 +1140,11 @@ footer .copyright {
           align-items: stretch;
   background: #000000;
   overflow: hidden;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  -webkit-background-size: cover !important;
+          background-size: cover !important;
 }
 
 .post .post-content .post-date {
@@ -1436,6 +1436,7 @@ a.newer-posts:hover {
     padding: 10px;
   }
   .post {
+    background-attachment: scroll !important;
     width: 98%;
     max-width: 100%;
     margin-left: 1%;
