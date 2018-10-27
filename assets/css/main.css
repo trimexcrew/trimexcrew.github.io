@@ -1364,33 +1364,8 @@ a.newer-posts:hover {
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  .post {
-    width: 48%;
-    max-width: 100%;
-    margin: 0 0.9% 1.5%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .post .post-thumbnail {
-    width: 100%;
-  }
-  .post .post-content {
-    width: 100%;
-  }
-  .post .post-content .post-title {
-    margin: 0 0 5px;
-  }
-  .post .post-content .post-title a {
-    font-size: 21px;
-  }
-}
-
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 880px) {
   .sidebar {
     position: relative;
     display: -webkit-box;
@@ -1412,6 +1387,12 @@ a.newer-posts:hover {
   }
   .sidebar footer {
     margin-bottom: 10px;
+  }
+  .post .post-content .post-date {
+    font-size: 50px;
+  }
+  .post .post-content .post-title {
+    font-size: 50px;
   }
   .about {
     text-align: center;
@@ -1457,7 +1438,10 @@ a.newer-posts:hover {
   .post {
     width: 98%;
     max-width: 100%;
-    margin: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0px;
+    margin-bottom: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1472,8 +1456,9 @@ a.newer-posts:hover {
   }
   .post .post-content .post-title {
     margin: 0 0 5px;
+    font-size: 36px;
   }
-  .post .post-content .post-title a {
-    font-size: 21px;
+  .post .post-content .post-date {
+    font-size: 36px;
   }
 }
