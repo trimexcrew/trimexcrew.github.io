@@ -11,11 +11,12 @@
     "child_process": "^1.0.2",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cache": "^0.4.6",
-    "gulp-imagemin": "^3.4.0",
+    "gulp-imagemin": "^4.1.0",
     "gulp-sass": "^3.2.1",
-    "imagemin-pngquant": "^5.1.0"
+    "imagemin-pngquant": "^6.0.0",
+    "minimatch": "^3.0.4"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.0"
   }
 }
