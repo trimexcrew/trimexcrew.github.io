@@ -982,6 +982,8 @@ pre code {
 }
 
 .somos .trimex {
+  background-repeat: no-repeat;
+  background-position: top left;
   height: 250px;
   line-height: 230px;
   font-size: 100px;
@@ -1005,6 +1007,15 @@ pre code {
           border-radius: 100%;
   overflow: hidden;
   background-color: #333030;
+}
+
+.about .trimex_chico {
+  height: 40px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+          background-size: contain;
 }
 
 .about img {
