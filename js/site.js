@@ -10,6 +10,13 @@ lightbox.option({
  'wrapAround': true
 });
 AOS.init();
+
+$('.mas_abajo').on('click', function(e) {
+      $('html, body').animate({
+        scrollTop: $(".posts").offset().top
+      }, 800);
+    });
+
 });
 //---------------------------------------------------------------
 //---------------------------------------------------------------

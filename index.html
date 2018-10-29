@@ -4,16 +4,19 @@ layout: main
 <div class="somos">
 
   <div class="trimex" style="background-image: url({{ '/assets/img/logo_trimex.svg' | prepend: site.baseurl }})" data-anchor-id="1" data-placement="bottom-top"></div>
+  <div class="somos_txt">
   Somos druidas digitales.<br>
   Invocamos la luz, la imagen, el sonido.<br>
   Generamos interacción con la tecnología.<br>
   Traemos el futuro al presente.<br>
   Preparamos nuestras propias pócimas con algo de magia negra digital.<br>
-  <br>
+  </div>
   <span class="mas_abajo">
     Más abajo puedes conocer las concecuencias de nuestros actos.
+    <div class="chevron"></div>
   </span>
 </div>
+<div class="posts">
 {% for post in site.posts %}
 <!-- <a class="post-thumbnail"  href="{{post.url | prepend: site.baseurl}}"></a> -->
 <article class="post" style="background-image: url({% include post_img.html post=post %}); cursor: pointer;"
@@ -49,5 +52,5 @@ layout: main
 </article>
 
 {% endfor %}
-
+</div>
 <!-- {% include pagination.html %} -->
