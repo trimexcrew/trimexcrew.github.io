@@ -2,6 +2,7 @@
 date: 2018-04-15 00:00:00 -0400
 layout: post
 title: Luminus Prospectu v2. MAVI
+published: true
 
 video_vimeo: 269480853
 

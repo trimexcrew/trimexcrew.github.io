@@ -2,6 +2,7 @@
 date: 2016-12-22 00:00:00 -0400
 layout: post
 title: Ratio Reflections
+published: true
 
 main_img: main.png
 imgs_folder: ratio_reflections/

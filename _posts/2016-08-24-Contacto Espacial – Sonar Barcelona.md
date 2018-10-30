@@ -4,6 +4,7 @@ layout: post
 title: Contacto Espacial – Sonar Barcelona
 main_img: main.png
 imgs_folder: contacto_espacial/
+published: true
 
 tags: [Interactive, Sonido, ALMA]
 
