@@ -15,7 +15,7 @@ social-facebook: # add your Facebook handle
 social-github: trimexcrew # add your Github handle
 social-linkedin: # add your Linkedin handle
 social-email: contacto@trimex.cl
-
+social-instagram: trimexcrew
 # Disqus
 # discus-identifier: mr-brown # add your discus identifier
 
@@ -30,7 +30,7 @@ plugins:
   - jekyll-paginate
   - jemoji
 
-paginate: 50
+paginate: 10
 paginate_path: "/page/:num"
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

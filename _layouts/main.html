@@ -8,14 +8,20 @@ layout: default
       <div class="logo">
         <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if site.logo %}{{site.logo}}{% endif %}" alt="{{site.trimex}}"></a>
       </div>
-
-
-      <div data-id="1" data-aos="fade-up" data-aos-anchor="[data-anchor-id='1']" data-aos-anchor-placement="bottom-top" class="trimex_chico" style="background-image: url({{ '/assets/img/logo_trimex.svg' | prepend: site.baseurl }})" ></div>
+      <div
+      {% if paginator.page == 1 %}
+       data-id="1" data-aos="fade-up" data-aos-anchor="[data-anchor-id='1']" data-aos-anchor-placement="bottom-top"
+      {% endif %}
+      class="trimex_chico" style="background-image: url({{ '/assets/img/logo_trimex.svg' | prepend: site.baseurl }})" ></div>
 
     </div>
   </header> <!-- End Header -->
   <footer>
-    <section class="contact">
+    <section class="contact"
+    {% if paginator.page == 1 %}
+     data-id="2" data-aos="fade-up" data-aos-anchor="[data-anchor-id='2']" data-aos-anchor-placement="top-top"  data-aos-offset="-10"
+    {% endif %}
+    >
       <h3 class="contact-title">Contacto</h3>
       <ul>
         {% if site.social-twitter %}
@@ -33,6 +39,10 @@ layout: default
         {% if site.social-email %}
           <li class="email"><a href="mailto:{{site.social-email}}"><i class="fa fa-envelope-o"></i></a></li>
         {% endif %}
+        {% if site.social-instagram %}
+          <li class="email"><a href="https://www.instagram.com/{{site.social-instagram}}/"><i class="fa fa-instagram"></i></a></li>
+        {% endif %}
+
       </ul>
     </section> <!-- End Section Contact -->
     <div class="copyright">

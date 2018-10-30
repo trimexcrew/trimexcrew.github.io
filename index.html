@@ -1,6 +1,7 @@
 ---
 layout: main
 ---
+{% if paginator.page == 1 %}
 <div class="somos">
 
   <div class="trimex" style="background-image: url({{ '/assets/img/logo_trimex.svg' | prepend: site.baseurl }})" data-anchor-id="1" data-placement="bottom-top"></div>
@@ -16,8 +17,10 @@ layout: main
     <div class="chevron"></div>
   </span>
 </div>
-<div class="posts">
-{% for post in site.posts %}
+{% endif %}
+<div class="posts" data-anchor-id="2" data-placement="top-top">
+
+{% for post in paginator.posts %}
 <!-- <a class="post-thumbnail"  href="{{post.url | prepend: site.baseurl}}"></a> -->
 <article class="post" style="background-image: url({% include post_img.html post=post %}); cursor: pointer;"
   onclick="window.location='{{post.url | prepend: site.baseurl}}';">
@@ -53,4 +56,4 @@ layout: main
 
 {% endfor %}
 </div>
-<!-- {% include pagination.html %} -->
+{% include pagination.html %}

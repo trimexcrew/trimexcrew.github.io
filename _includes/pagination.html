@@ -1,19 +1,26 @@
 <div class="container">
-  <nav class="pagination" role="pagination">
-    <ul>
+  <nav class="paginator">
+<p><span class="page-number">Página {{paginator.page}} de {{paginator.total_pages}}</span></p>
+    <div class="pagination">
       {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-        <p><a class="newer-posts" href="{{ site.baseurl }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a></p>
+        <a class="newer-posts" href="{{ site.baseurl }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
         {% else %}
-        <p><a class="newer-posts" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a></p>
+        <a class="newer-posts" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
         {% endif %}
       {% endif %}
 
-      <p><span class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</span></p>
 
+      {% for i in (1..{{paginator.total_pages}}) %}
+        {% if i == 1 %}
+        <a href="{{ site.baseurl}}/">{{i}}</a>
+        {% else %}
+        <a href="{{ site.baseurl }}/page/{{ i }}/">{{i}}</a>
+        {% endif %}
+      {% endfor %}
       {% if paginator.next_page %}
-      <p><a class="older-posts" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+      <a class="older-posts" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
       {% endif %}
-    </ul>
+    </div>
   </nav>
 </div>
