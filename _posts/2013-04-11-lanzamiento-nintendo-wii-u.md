@@ -12,6 +12,7 @@ imgs_folder: nintendo/
 client: Nintendo Chile
 video_vimeo: 54790588
 
+flickrset: 72157632163975830
 ---
 
 
@@ -33,5 +34,3 @@ Créditos:
 * Lugar: **Galería Animal**
 * Cliente: **Nintendo Chile**
 * Foto: **Josefina Lagos**
-
-{% include gallery.html flickr_set="72157632163975830" %}

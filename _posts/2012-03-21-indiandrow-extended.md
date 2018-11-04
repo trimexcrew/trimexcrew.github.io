@@ -5,6 +5,7 @@ status: publish
 published: true
 title: IndianDrow Extended
 video_vimeo: 38958193
+flickrset: 72157629318421138
 
 ---
 
@@ -16,5 +17,3 @@ Creditos:
 * Mapping & Vjing: **Andrés Terrisse**
 * Construccion: **Juan Jose Aldunce**
 * Edición: **Juan Pablo Mendez**
-
-{% include gallery.html flickr_set="72157629318421138" %}

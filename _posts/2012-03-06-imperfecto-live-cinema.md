@@ -6,6 +6,7 @@ published: true
 title: IMPERFECTO Live Cinema
 video_vimeo: 39075633
 tags: []
+flickrset: 72157629430142127
 ---
 
 
@@ -27,5 +28,3 @@ Créditos:
 * Make Up: **Marianela Lopez**
 * Registro: **Nanuk**
 * Produce: **Minimale**
-
-{% include gallery.html flickr_set="72157629430142127" %}

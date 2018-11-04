@@ -8,9 +8,8 @@ title: Lanzamiento Catalogo BVAM
 main_img: 2N6A7290.jpg
 imgs_folder: bvam/
 
+flickrset: 72157633221057309
 
 ---
 
 Fotos: Josefina Lagos
-
-{% include gallery.html flickr_set="72157633221057309" %}

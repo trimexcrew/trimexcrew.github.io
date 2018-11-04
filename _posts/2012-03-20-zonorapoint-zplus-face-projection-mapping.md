@@ -6,6 +6,7 @@ published: true
 title: ZonoraPoint ZPlus - Face Projection Mapping
 
 video_vimeo: 38877154
+flickrset: 72157629586239161
 ---
 Material generado en el videoclip de ZONORA POINT - NOS 2 (Prod. DJ Raff), en modo de laboratorio vertx generó estos contenidos.
 
@@ -15,7 +16,6 @@ Créditos:
 * Arte + Mapping: **Vertx**
 
 
-{% include gallery.html flickr_set="72157629586239161" %}
 
 
 {% include soundcloud.html track="10206641" %}

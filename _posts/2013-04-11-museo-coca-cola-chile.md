@@ -11,9 +11,8 @@ main_img: 01.jpg
 imgs_folder: cocacola/
 
 tags: [Mapping, Multiprojection, 3D animation]
+flickrset: 72157632266989759
 ---
 
 
 Multiproyección mapping realizado en el museo "La Fábrica de la Felicidad" de Coca-Cola en la embotelladora CocaCola Andina en Santiago, Chile.
-
-{% include gallery.html flickr_set="72157632266989759" %}
