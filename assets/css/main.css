@@ -830,10 +830,11 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   color: #f0f0f0;
   background-color: #000000;
   margin: 0;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -854,7 +855,6 @@ img + em {
   margin-top: 10px;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
 }
 
 blockquote {
@@ -915,6 +915,10 @@ pre code {
   overflow: hidden;
 }
 
+.posts {
+  width: 100%;
+}
+
 .galery:after {
   content: '';
   width: 100%;
@@ -931,8 +935,6 @@ pre code {
   border-top-color: #fafafa;
   border-top-style: solid;
   text-align: justify;
-  font-size: 0.1px;
-  /* IE 9 & 10 don't like font-size: 0; */
 }
 
 .galery_thumb {
@@ -972,7 +974,7 @@ pre code {
 }
 
 .pagination a:hover:not(.active) {
-  background-color: #a0a0a0;
+  background-color: #050505;
 }
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
@@ -1010,11 +1012,10 @@ pre code {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-weight: 900;
   width: 100%;
   height: 100%;
@@ -1027,7 +1028,7 @@ pre code {
   float: left;
   background-repeat: no-repeat;
   background-position: top left;
-  margin-top: 40px;
+  margin-top: 60px;
   width: 482px;
   height: 97px;
 }
@@ -1037,7 +1038,6 @@ pre code {
 }
 
 .somos .mas_abajo {
-  font-family: 'Lato', sans-serif;
   font-weight: 100;
   display: block;
   cursor: pointer;
@@ -1099,14 +1099,12 @@ pre code {
   margin: 0 0 10px;
   position: relative;
   padding-bottom: 15px;
-  font-size: 16px;
   text-transform: uppercase;
   color: #f0f0f0;
   font-weight: 700;
 }
 
 .about p {
-  font-size: 16px;
   margin: 0 0 10px;
 }
 
@@ -1137,7 +1135,6 @@ pre code {
 .contact .contact-title {
   position: relative;
   font-weight: 400;
-  font-size: 12px;
   margin: 0 0 5px;
   text-transform: uppercase;
   text-align: center;
@@ -1193,7 +1190,6 @@ pre code {
   color: #f0f0f0;
   display: block;
   padding: 5px;
-  font-size: 18px;
   -webkit-transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
   -o-transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
   transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
@@ -1207,7 +1203,6 @@ pre code {
 }
 
 footer .copyright {
-  font-size: 14px;
   text-align: center;
   margin: 0;
 }
@@ -1240,22 +1235,15 @@ footer .copyright {
 }
 
 .post .post-content .post-date {
-  font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 80px;
-}
-
-.post .post-content .post-words {
-  font-size: 12px;
 }
 
 .post .post-content .post-title {
-  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   margin: 0 0 10px;
-  font-size: 80px;
   font-weight: 900;
   color: #fafafa;
+  background-color: #050505;
 }
 
 .post .post-content .post-title a {
@@ -1268,7 +1256,6 @@ footer .copyright {
 }
 
 a.older-posts, a.newer-posts {
-  font-size: 18px;
   display: inline-block;
   color: #f0f0f0;
   -webkit-transition: -webkit-transform .2s;
@@ -1307,9 +1294,8 @@ a.newer-posts:hover {
 }
 
 .header-page .page-date {
-  color: #a0a0a0;
+  color: #050505;
   font-weight: 300;
-  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -1354,7 +1340,7 @@ a.newer-posts:hover {
           flex-wrap: wrap;
   padding-bottom: 30px;
   margin: 30px 0;
-  border-bottom: 1px solid #a0a0a0;
+  border-bottom: 1px solid #050505;
 }
 
 .page-footer .page-share {
@@ -1370,7 +1356,6 @@ a.newer-posts:hover {
   padding: 5px 10px;
   margin-left: 5px;
   color: #263959;
-  font-size: 12px;
   -webkit-transition: background-color .3s;
   -o-transition: background-color .3s;
   transition: background-color .3s;
@@ -1386,7 +1371,6 @@ a.newer-posts:hover {
 
 .page-footer .page-tag a {
   text-decoration: none;
-  font-size: 10px;
   padding: 5px 10px;
   margin-left: 5px;
   color: #263959;
@@ -1459,32 +1443,8 @@ a.newer-posts:hover {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 880px) {
   .sidebar {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 100%;
-    padding: 10px;
-    background-color: #000000;
-  }
-  .sidebar footer {
-    margin-bottom: 10px;
-  }
-  .post .post-content .post-date {
-    font-size: 50px;
-  }
-  .post .post-content .post-title {
-    font-size: 50px;
+    height: 100%;
   }
   .about {
     text-align: center;
@@ -1529,17 +1489,12 @@ a.newer-posts:hover {
   }
   .post {
     background-attachment: scroll !important;
-    width: 98%;
+    width: 100%;
     max-width: 100%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
     margin-top: 0px;
     margin-bottom: 0px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .post .post-thumbnail {
     width: 100%;
@@ -1549,9 +1504,5 @@ a.newer-posts:hover {
   }
   .post .post-content .post-title {
     margin: 0 0 5px;
-    font-size: 36px;
-  }
-  .post .post-content .post-date {
-    font-size: 36px;
   }
 }
