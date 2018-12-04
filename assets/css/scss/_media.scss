@@ -25,26 +25,27 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 880px) {
   .sidebar {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
     width: 100%;
-    padding: 10px;
-    background-color: $background;
+    height: 100%;
+    // padding: 10px;
+    // background-color: $background;
     // box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
-    footer {
-      margin-bottom: 10px;
-    }
+    // footer {
+      // margin-bottom: 10px;
+    // }
   }
 
 
 
     .post .post-content .post-date{
-      font-size:50px;
+      // font-size:50px;
     }
     .post .post-content .post-title {
-      font-size: 50px;
+      // font-size: 50px;
     }
 
 
@@ -82,13 +83,13 @@
   .post{
     background-attachment: scroll !important;
 
-    width: 98%;
+    width: 100%;
     max-width: 100%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
     margin-top: 0px;
     margin-bottom: 0px;
-    flex-direction: column;
+    // flex-direction: column;
 
     .post-thumbnail {
       width: 100%;
@@ -98,10 +99,10 @@
       width: 100%;
       .post-title {
         margin: 0 0 5px;
-        font-size: 36px;
+        // font-size: 36px;
       }
       .post-date{
-        font-size:36px;
+        // font-size:36px;
      }
     }
   }
