@@ -78,7 +78,7 @@
 	<!-- <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:900&amp;subset=latin-ext" rel="stylesheet"> -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700,900&amp;subset=latin-ext" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700,900&amp;subset=latin-ext" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&amp;subset=latin-ext" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web:900&amp;subset=latin-ext" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Kanit:900&amp;subset=latin-ext" rel="stylesheet"> -->
@@ -93,6 +93,13 @@
 
 	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	{% if page.url == '/' %}
+	<script src="http://www.instagram.com/embed.js"></script>
+	<script src="{{"/js/ig.js" | prepend: site.baseurl }}"></script>
+	{% endif %}
+	<link rel="stylesheet" href="{{"/assets/css/ig_post.css"| prepend: site.baseurl }}">
 
 
 </head>
