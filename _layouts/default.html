@@ -3,12 +3,13 @@
 {% include head.html %}
 <body>
 
+
   <div class="wrapper">
     {{ content }}
   </div>
 
   {% include analytics.html %}
-  <script src="{{"/js/lightbox-plus-jquery.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{"/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="{{"/js/site.js" | prepend: site.baseurl }}"></script>
 
