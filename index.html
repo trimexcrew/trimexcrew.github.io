@@ -11,12 +11,17 @@ layout: main
   Generamos interacción con la tecnología.<br>
   Traemos el futuro al presente.<br>
   Preparamos nuestras propias pócimas con algo de magia negra digital.<br>
+
   </div>
   <span class="mas_abajo">
     Más abajo puedes conocer las concecuencias de nuestros actos.
     <div class="chevron"></div>
   </span>
 </div>
+
+<div id="ig"></div>
+<div id="ig_post" onclick="ig_post_on_click()"></div>
+
 {% endif %}
 <div class="posts" data-anchor-id="2" data-placement="top-top">
 
@@ -57,3 +62,7 @@ layout: main
 {% endfor %}
 </div>
 {% include pagination.html %}
+
+{% if paginator.page == 1 %}
+<script src="https://api.instagram.com/v1/users/self/media/recent?access_token=529774806.22bb494.d445d962758b49beb8e59da206354fa4&callback=myFunc&count=18&omitscript=true"></script>
+{% endif %}
