@@ -1,5 +1,8 @@
 .ig_grid_line{
   /* height: 360px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   /* padding-top: 33.3%; */
 }
@@ -7,16 +10,26 @@
   width: 33.3%;
   height:100%;
   cursor: pointer;
+  position: relative;
   /* background-position-x: 0%;
   background-position-y: 0%;
   background-repeat: repeat; */
   /* background-attachment: ; */
   /* padding-top: 100%; */
   display: inline-block;
+  img{
+    // z-index: 50;
+    // position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 }
  #ig{
    width:100%;
    margin: 0px auto;
+   display: flex;
+   flex-direction: column;
    /* max-width: 1080px; */
  }
 

@@ -917,6 +917,18 @@ pre code {
 
 .posts {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .galery:after {
@@ -942,11 +954,6 @@ pre code {
   display: inline-block;
   max-width: 200px;
   max-height: 200px;
-}
-
-.post-content img {
-  width: 100%;
-  margin: auto;
 }
 
 /*--------------------------pagination------------------------------------*/
@@ -975,6 +982,95 @@ pre code {
 
 .pagination a:hover:not(.active) {
   background-color: #050505;
+}
+
+/* - - - - - - - - - - Instagram feed styles - - - - - - - - - - */
+.ig_grid_line {
+  /* height: 360px; */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+  /* padding-top: 33.3%; */
+}
+
+.ig_grid_post {
+  width: 33.3%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  /* background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat; */
+  /* background-attachment: ; */
+  /* padding-top: 100%; */
+  display: inline-block;
+}
+
+.ig_grid_post img {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+#ig {
+  width: 100%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* max-width: 1080px; */
+}
+
+#ig_post {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+}
+
+#ig_post_in {
+  max-width: 658px;
+  max-height: 658px;
+  width: -webkit-calc(100% - 2px);
+  width: calc(100% - 2px);
+  height: -webkit-calc(100% - 2px);
+  height: calc(100% - 2px);
+  min-width: 326px;
+  min-height: 326px;
+  display: block;
+  margin: 0px 0px 12px;
+  background-color: #FFF;
+  /* width: 300px;
+  height: 200px;
+  background-color: DodgerBlue; */
 }
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
@@ -1110,26 +1206,6 @@ pre code {
 
 .content-box {
   padding: 0px 0px 0px 260px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
 }
 
 .contact .contact-title {
@@ -1208,10 +1284,10 @@ footer .copyright {
 }
 
 .post {
-  width: 100%;
+  width: -webkit-calc(100% / 3);
+  width: calc(100% / 3);
   min-width: 250px;
   min-height: 250px;
-  height: 250px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1227,18 +1303,32 @@ footer .copyright {
           align-items: stretch;
   background: #000000;
   overflow: hidden;
-  background-attachment: fixed !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   -webkit-background-size: cover !important;
           background-size: cover !important;
 }
 
-.post .post-content .post-date {
-  font-weight: 100;
+.grid-post-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.post .post-content .post-title {
+.grid-post-content .post-date {
+  color: #fafafa;
+}
+
+.grid-post-content .post-title {
   text-decoration: none;
   margin: 0 0 10px;
   font-weight: 900;
@@ -1246,12 +1336,12 @@ footer .copyright {
   background-color: #050505;
 }
 
-.post .post-content .post-title a {
+.grid-post-content .post-title a {
   text-decoration: none;
   color: #fafafa;
 }
 
-.post .post-content p {
+.grid-post-content p {
   margin-top: 0;
 }
 
@@ -1441,10 +1531,10 @@ a.newer-posts:hover {
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 1010px) {
   .sidebar {
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
   .about {
     text-align: center;
@@ -1460,22 +1550,6 @@ a.newer-posts:hover {
   }
   .content-box {
     padding: 0px 10px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
   }
   .contact-title, .copyright {
     display: none;
@@ -1484,11 +1558,7 @@ a.newer-posts:hover {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  .content-box {
-    padding: 10px;
-  }
   .post {
-    background-attachment: scroll !important;
     width: 100%;
     max-width: 100%;
     margin-left: 0%;

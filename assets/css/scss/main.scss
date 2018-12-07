@@ -108,6 +108,9 @@ pre {
 }
 .posts{
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .galery:after {
   content: '';
@@ -138,11 +141,11 @@ pre {
   // padding: 10px;
 }
 
-.post-content img{
-   width: 100%;
+// .post-content img{
+   // width: 100%;
    // max-width: 600px;
-  margin:auto;
-}
+  // margin:auto;
+// }
 
 /*--------------------------pagination------------------------------------*/
 .paginator{
@@ -168,6 +171,9 @@ pre {
 .pagination a:hover:not(.active) {
   background-color: $dark-gray;
 }
+
+/* - - - - - - - - - - Instagram feed styles - - - - - - - - - - */
+@import 'ig-post';
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
 @import 'parts/home-page';
