@@ -12,7 +12,7 @@ imgs_folder: nintendo/
 client: Nintendo Chile
 video_vimeo: 54790588
 
-flickrset: 72157632163975830
+flickrset: '72157632163975830'
 ---
 
 

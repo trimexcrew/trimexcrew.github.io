@@ -11,7 +11,7 @@ main_img: 01.jpg
 imgs_folder: cocacola/
 
 tags: [Mapping, Multiprojection, 3D animation]
-flickrset: 72157632266989759
+flickrset: '72157632266989759'
 ---
 
 

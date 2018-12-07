@@ -7,7 +7,7 @@ title: Expo Vertx + Madhaus + Kitty Kills
 
 video_vimeo: 25572742
 tags: []
-flickrset: 72157627216380639
+flickrset: '72157627216380639'
 ---
 
 

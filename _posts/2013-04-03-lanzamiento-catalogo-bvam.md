@@ -8,7 +8,7 @@ title: Lanzamiento Catalogo BVAM
 main_img: 2N6A7290.jpg
 imgs_folder: bvam/
 
-flickrset: 72157633221057309
+flickrset: '72157633221057309'
 
 ---
 
