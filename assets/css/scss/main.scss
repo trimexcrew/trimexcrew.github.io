@@ -172,6 +172,19 @@ pre {
   background-color: $dark-gray;
 }
 
+/* - - - - - - - - - - logo - - - - - - - - - - */
+.logo2{
+display: none;
+
+}
+.trimex_flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+}
+
 /* - - - - - - - - - - Instagram feed styles - - - - - - - - - - */
 @import 'ig-post';
 

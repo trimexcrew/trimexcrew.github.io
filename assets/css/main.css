@@ -984,6 +984,28 @@ pre code {
   background-color: #050505;
 }
 
+/* - - - - - - - - - - logo - - - - - - - - - - */
+.logo2 {
+  display: none;
+}
+
+.trimex_flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
 /* - - - - - - - - - - Instagram feed styles - - - - - - - - - - */
 .ig_grid_line {
   /* height: 360px; */
@@ -1000,6 +1022,7 @@ pre code {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   width: 100%;
+  position: relative;
   /* padding-top: 33.3%; */
 }
 
@@ -1117,7 +1140,6 @@ pre code {
   height: 100%;
   min-height: 100vh;
   text-align: right;
-  padding-right: 20px;
 }
 
 .somos .trimex {
@@ -1131,6 +1153,7 @@ pre code {
 
 .somos .somos_txt {
   height: 100%;
+  padding-right: 20px;
 }
 
 .somos .mas_abajo {
@@ -1326,9 +1349,17 @@ footer .copyright {
 
 .grid-post-content .post-date {
   color: #fafafa;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .grid-post-content .post-title {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
   text-decoration: none;
   margin: 0 0 10px;
   font-weight: 900;
@@ -1533,8 +1564,43 @@ a.newer-posts:hover {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 1010px) {
   .sidebar {
-    width: 100%;
-    height: 100vh;
+    display: none;
+  }
+  .grid-post-content {
+    top: -20px;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grid-post-content .post-date {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .grid-post-content .post-title {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .somos .trimex {
+    width: -webkit-calc(100% - 100px);
+    width: calc(100% - 100px);
+    margin-top: 10px;
+  }
+  .trimex_flex {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo2 {
+    display: inherit;
+    width: 200px;
   }
   .about {
     text-align: center;
@@ -1558,6 +1624,9 @@ a.newer-posts:hover {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
   .post {
     width: 100%;
     max-width: 100%;

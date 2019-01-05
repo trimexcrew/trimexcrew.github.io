@@ -3,8 +3,12 @@ layout: main
 ---
 {% if paginator.page == 1 %}
 <div class="somos">
-
-  <div class="trimex" style="background-image: url({{ '/assets/img/logo_trimex.svg' | prepend: site.baseurl }})" data-anchor-id="1" data-placement="bottom-top"></div>
+  <div class="trimex_flex">
+    <div class="logo2">
+      <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if site.logo %}{{site.logo}}{% endif %}" alt="{{site.trimex}}"></a>
+    </div>
+    <img class="trimex" src="{{ '/assets/img/logo_trimex.svg' | prepend: site.baseurl }}" data-anchor-id="1" data-placement="bottom-top"></img>
+  </div>
   <div class="somos_txt">
   Somos druidas digitales.<br>
   Invocamos la luz, la imagen, el sonido.<br>
