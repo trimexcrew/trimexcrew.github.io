@@ -25,7 +25,6 @@ function loadIGPost(ig) {
   };
   xmlhttp.open("GET", "https://api.instagram.com/oembed?url="+ig.id, true);
   xmlhttp.send();
-
 }
 function myFunc(myObj) {
   var ig = document.getElementById("ig");
@@ -36,14 +35,21 @@ function myFunc(myObj) {
     dv.setAttribute("class", "ig_grid_line")
 
     for(j = 0; j < 3 && j+i < len; j++){
-    img = document.createElement("img");
-    img.setAttribute("class","ig_grid_post");
-    img.setAttribute("src",myObj.data[j+i].images.standard_resolution.url);
-    img.setAttribute("id", myObj.data[j+i].link);
-    img.setAttribute("onclick","loadIGPost(this)");
-
-    dv.appendChild(img);
+        img = document.createElement("img");
+        img.setAttribute("class","ig_grid_post");
+        img.setAttribute("src",myObj.data[j+i].images.standard_resolution.url);
+        img.setAttribute("id", myObj.data[j+i].link);
+        img.setAttribute("onclick","loadIGPost(this)");
+        dv.appendChild(img);
     }
+
+        gpc = document.createElement("div");
+        gpc.setAttribute("class", "grid-post-content");
+        spt = document.createElement("span");
+        spt.setAttribute("class", "post-title");
+        spt.innerHTML = myObj.data[i].caption.text;
+        gpc.appendChild(spt);
+        dv.appendChild(gpc);
     ig.appendChild(dv);
   }
 }
