@@ -105,7 +105,7 @@ function igCallback(myObj) {
           img.setAttribute("ig_tipo", "video");
           img.setAttribute("ig_src", myObj.data[j+i].videos.standard_resolution.url);
           img.setAttribute("ig_width", myObj.data[j+i].videos.standard_resolution.width);
-          img.setAttribute("ig_height", myObj.data[j+i].videos.standard_resolution.width);
+          img.setAttribute("ig_height", myObj.data[j+i].videos.standard_resolution.height);
         }else{
           img.setAttribute("ig_tipo", "imagen");
           img.setAttribute("ig_src", myObj.data[j+i].images.standard_resolution.url);
