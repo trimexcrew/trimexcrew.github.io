@@ -877,11 +877,23 @@ pre code {
   width: calc(100% - 2px);
   height: -webkit-calc(100% - 2px);
   height: calc(100% - 2px);
-  min-width: 326px;
-  min-height: 326px;
+  min-width: 300px;
+  min-height: 300px;
   display: block;
   margin: 0px 0px 12px;
-  background-color: #FFF;
+  background-color: #000;
+}
+
+#ig_nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
@@ -1143,7 +1155,7 @@ footer .copyright {
           order: 2;
 }
 
-.grid-post-content .post-title {
+.grid-post-content .post-title, .grid-post-content .ig-post-title {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
       -ms-flex-order: 1;
@@ -1152,12 +1164,16 @@ footer .copyright {
   margin: 0 0 10px;
   font-weight: 900;
   color: #fafafa;
-  background-color: #050505;
+  background-color: #05050577;
 }
 
-.grid-post-content .post-title a {
+.grid-post-content .post-title a, .grid-post-content .ig-post-title a {
   text-decoration: none;
   color: #fafafa;
+}
+
+.grid-post-content .ig-post-title {
+  font-weight: 400;
 }
 
 .grid-post-content p {

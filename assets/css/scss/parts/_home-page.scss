@@ -45,10 +45,12 @@
         border-width: 5px 5px 0 0;
         margin: 0 auto 20px auto;
         -webkit-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
-        transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+              transform: rotate(135deg);
+
       }
     }
+
 }
 .about {
   margin: 0 0 40px;
@@ -177,18 +179,25 @@ footer {
      color: $lightgray;
      order: 2;
    }
-   .post-title {
+   %p-title{
      order: 1;
      text-decoration: none;
      margin: 0 0 10px;
 
      font-weight:900;
      color: $lightgray;
-     background-color: $dark-gray;
+     background-color: $dark-gray-alpha;
      a {
        text-decoration: none;
        color:$lightgray;
      }
+   }
+   .post-title {
+      @extend %p-title;
+   }
+   .ig-post-title {
+      @extend %p-title;
+      font-weight:400;
    }
    p {
      margin-top: 0;
