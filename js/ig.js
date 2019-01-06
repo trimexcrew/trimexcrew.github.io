@@ -41,6 +41,7 @@ function loadIGPost(event,id) {
     vid.setAttribute("width", ig.attributes.ig_width.nodeValue);
     vid.setAttribute("height", ig.attributes.ig_height.nodeValue);
     // igp.appendChild(vid);
+    vid.setAttribute("style","width: 100%");
     igp.insertBefore(vid, document.getElementById("ig_nav"));
   }else{
     img = document.createElement("img");
@@ -48,6 +49,7 @@ function loadIGPost(event,id) {
     img.setAttribute("src", ig.attributes.ig_src.nodeValue);
     img.setAttribute("width", ig.attributes.ig_width.nodeValue);
     img.setAttribute("height", ig.attributes.ig_height.nodeValue);
+    img.setAttribute("style","width: 100%");
     // igp.appendChild(img);
     igp.insertBefore(img, document.getElementById("ig_nav"));
   }
@@ -110,7 +112,7 @@ function igCallback(myObj) {
           img.setAttribute("ig_tipo", "imagen");
           img.setAttribute("ig_src", myObj.data[j+i].images.standard_resolution.url);
           img.setAttribute("ig_width", myObj.data[j+i].images.standard_resolution.width);
-          img.setAttribute("ig_height", myObj.data[j+i].images.standard_resolution.width);
+          img.setAttribute("ig_height", myObj.data[j+i].images.standard_resolution.height);
         }
 
         img.setAttribute("onclick","loadIGPost(event, \"ig_post_thumb_"+(j+i)+"\")");
