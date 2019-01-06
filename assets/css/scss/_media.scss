@@ -59,11 +59,14 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  body {
+    font-size: 12px;
+  }
   .sidebar {
     display: none;
   }
-  .content-box {
-    // padding: 10px;
+  .logo2{
+    width: 120px;
   }
   .post{
     width: 100%;
