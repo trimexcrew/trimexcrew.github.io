@@ -13,7 +13,7 @@ function setPrevNextOnClic(elem, id){
 //----------------------------------------------------------------------------------------------
 function loadIGPost(event,id) {
 
-  console.log("loadIGPost "+ id);
+  // console.log("loadIGPost "+ id);
   // console.log(event);
   var ig = document.getElementById(id);
   var ig_post = document.getElementById("ig_post");
@@ -73,8 +73,8 @@ function ig_post_close_lightbox(event){
   var ig_post = document.getElementById("ig_post");
   if(ig_post.style.display != "none") {
     if(event.originalTarget.attributes.id.nodeValue == "ig_post"){
-      console.log("ig_post_on_click");
-      console.log(event);
+      // console.log("ig_post_on_click");
+      // console.log(event);
       ig_post.style.display = "none";
       ig_post.style.cursor = "default";
       var igp = document.getElementById("ig_post_in");
