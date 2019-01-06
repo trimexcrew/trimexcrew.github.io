@@ -1,7 +1,6 @@
 .wrap-content {
   padding: 20px;
 }
-
 .header-page {
   text-align: center;
   margin: 10px 0;
@@ -13,21 +12,14 @@
   .page-date {
     color: $dark-gray;
     font-weight: 300;
-    // font-size: 12px;
     text-transform: uppercase;
   }
 }
 .video-header {
   width: 100%;
-  // min-height: 500px;
-  // max-width: calc(100% - #{$sidebar-size});
   & iframe {
-    // width: 1080px;
     max-width: #{$post_max_width};
     max-height: #{$post_max_height};
-// max-width: calc(100% - #{$sidebar-size});
-    // width: if(calc(1080px - 100%) > 0,  100%, 1080px);
-    // max-width:
   }
 }
 .page-cover-image {
@@ -35,23 +27,11 @@
   padding: 0;
   margin: 0;
   max-height: 500px;
-  // background-color: $lightgray;
   overflow: hidden;
   figure {
     position: relative;
     margin: 0;
   }
-  // figcaption {
-  //   position: absolute;
-  //   top: 20px;
-  //   right: 20px;
-  //   padding-left: 20px;
-  //   color: rgba(255, 255, 255, 0.7);
-  //   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  //   font-weight: 700;
-  //   text-transform: uppercase;
-  //   font-size: 10px;
-  // }
   .page-image {
     width: 100%;
     height: 100%;
@@ -76,7 +56,6 @@
       padding: 5px 10px;
       margin-left: 5px;
       color: $dark-blue;
-      // font-size: 12px;
       transition: background-color .3s;
       &:first-child {
         margin-left: 0;
@@ -89,7 +68,6 @@
   .page-tag {
     a {
       text-decoration: none;
-      // font-size: 10px;
       padding: 5px 10px;
       margin-left: 5px;
       color: $dark-blue;

@@ -1,26 +1,17 @@
 .ig_grid_line{
-  /* height: 360px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   position: relative;
-  /* padding-top: 33.3%; */
 }
 .ig_grid_post{
   width: 33.3%;
   height:100%;
   cursor: pointer;
   position: relative;
-  /* background-position-x: 0%;
-  background-position-y: 0%;
-  background-repeat: repeat; */
-  /* background-attachment: ; */
-  /* padding-top: 100%; */
   display: inline-block;
   img{
-    // z-index: 50;
-    // position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -31,7 +22,6 @@
    margin: 0px auto;
    display: flex;
    flex-direction: column;
-   /* max-width: 1080px; */
  }
 
 #ig_post{
@@ -55,10 +45,5 @@
   min-height: 326px;
   display: block;
   margin: 0px 0px 12px;
-
-
   background-color: #FFF;
-  /* width: 300px;
-  height: 200px;
-  background-color: DodgerBlue; */
 }

@@ -68,18 +68,9 @@ pre {
 }
 
 .wrapper {
-  // max-width: 1250px;
   position: relative;
 }
 
-.post, .article-page {
-  // max-width: 900px;
-
-  // background-color: #fff;
-}
- .article-page {
-
- }
 ::-moz-selection {
   background: rgba(38, 57, 89, 0.8);
   color: $white;
@@ -137,16 +128,6 @@ pre {
   max-width: 200px;
   max-height: 200px;
 }
-.galery_thumb img{
-  // padding: 10px;
-}
-
-// .post-content img{
-   // width: 100%;
-   // max-width: 600px;
-  // margin:auto;
-// }
-
 /*--------------------------pagination------------------------------------*/
 .paginator{
   text-align: center;
