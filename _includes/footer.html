@@ -1,0 +1,33 @@
+<footer>
+  <section class="contact"
+  {% if paginator.page == 1 %}
+   data-id="2" data-aos="fade-up" data-aos-anchor="[data-anchor-id='2']" data-aos-anchor-placement="top-top"  data-aos-offset="-10"
+  {% endif %}
+  >
+    <h3 class="contact-title">Contacto</h3>
+    <ul>
+      {% if site.social-twitter %}
+        <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      {% endif %}
+      {% if site.social-facebook %}
+        <li><a href="https://facebook.com/{{ site.social-facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      {% endif %}
+      {% if site.social-github %}
+        <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+      {% endif %}
+      {% if site.social-linkedin %}
+        <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.social-linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      {% endif %}
+      {% if site.social-email %}
+        <li class="email"><a href="mailto:{{site.social-email}}"><i class="fa fa-envelope-o"></i></a></li>
+      {% endif %}
+      {% if site.social-instagram %}
+        <li class="email"><a href="https://www.instagram.com/{{site.social-instagram}}/"><i class="fa fa-instagram"></i></a></li>
+      {% endif %}
+
+    </ul>
+  </section> <!-- End Section Contact -->
+  <div class="copyright">
+    <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
+  </div>
+</footer> <!-- End Footer -->

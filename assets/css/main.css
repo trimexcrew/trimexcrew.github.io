@@ -1215,6 +1215,10 @@ footer .copyright {
   padding-top: 20px;
 }
 
+.footer_moviles {
+  display: none;
+}
+
 a.older-posts, a.newer-posts {
   display: inline-block;
   color: #f0f0f0;
@@ -1424,6 +1428,9 @@ a.newer-posts:hover {
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .footer_moviles {
+    display: inherit;
   }
   .somos .trimex {
     width: -webkit-calc(100% - 100px);
