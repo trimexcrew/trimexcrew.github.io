@@ -829,12 +829,22 @@ pre code {
   cursor: pointer;
   position: relative;
   display: inline-block;
+  -webkit-transition: -webkit-transform 0.20s;
+  transition: -webkit-transform 0.20s;
+  -o-transition: transform 0.20s;
+  transition: transform 0.20s;
+  transition: transform 0.20s, -webkit-transform 0.20s;
 }
 
 .ig_grid_post img {
   left: 0;
   top: 0;
   width: 100%;
+}
+
+.ig_grid_post:hover {
+  -webkit-transform: scale3d(0.97, 0.97, 1);
+          transform: scale3d(0.97, 0.97, 1);
 }
 
 #ig {
@@ -849,6 +859,26 @@ pre code {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#ig_post_close_btn {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.ig_boton_nav {
+  opacity: 0.4;
+  -webkit-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+.ig_boton_nav:hover {
+  opacity: 1;
+}
+
+.ig_link {
+  font-weight: 900;
 }
 
 #ig_post {
@@ -868,6 +898,7 @@ pre code {
       -ms-flex-align: center;
           align-items: center;
   z-index: 100;
+  overflow: auto;
 }
 
 #ig_post_in {
@@ -1176,6 +1207,12 @@ footer .copyright {
 
 .grid-post-content p {
   margin-top: 0;
+}
+
+#proyectos, #recientes {
+  font-weight: 900;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
 a.older-posts, a.newer-posts {

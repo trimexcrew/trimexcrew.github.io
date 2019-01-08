@@ -22,17 +22,22 @@ layout: main
     <div class="chevron"></div>
   </span>
 </div>
-
+<span id="recientes">Recientes</span>
 <div id="ig"  data-anchor-id="2" data-placement="top-top"></div>
 <div id="ig_post" onclick="ig_post_close_lightbox(event)">
   <div id="ig_post_in">
+    <img class="ig_boton_nav" width="27" height="27" src="{{ '/assets/lightbox_gui_images/close.png' | prepend: site.baseurl }}" id="ig_post_close_btn" onclick="ig_post_close_lightbox(event)"></img>
     <div id="ig_nav">
-      <img src="{{ '/assets/lightbox_gui_images/prev.png' | prepend: site.baseurl }}" id="ig_nav_prev"></img>
-      <img src="{{ '/assets/lightbox_gui_images/next.png' | prepend: site.baseurl }}" id="ig_nav_next"></img>
+      <img class="ig_boton_nav" width="50" height="45" src="{{ '/assets/lightbox_gui_images/prev.png' | prepend: site.baseurl }}" id="ig_nav_prev"></img>
+      <div id="ig_post_caption">
+        <div id="ig_post_caption_txt"></div>
+      <a href="http://trimex.cl" id="ig_link">Ver en Instagram</a>
+      </div>
+      <img class="ig_boton_nav" width="50" height="45" src="{{ '/assets/lightbox_gui_images/next.png' | prepend: site.baseurl }}" id="ig_nav_next"></img>
     </div>
   </div>
 </div>
-
+<span id="proyectos">Proyectos</span>
 {% endif %}
 <div class="posts">
 

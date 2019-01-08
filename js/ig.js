@@ -2,7 +2,7 @@
 function setPrevNextOnClic(elem, id){
   if(id){
     // console.log("setPrevNextOnClic  " + id.nodeValue);
-    elem.setAttribute("onclick","loadIGPost(event, \""+id.nodeValue+"\")");
+    elem.setAttribute("onclick","loadIGPost( \""+id.nodeValue+"\")");
     elem.style.display = "inherit";
   }else{
     elem.style.display = "none";
@@ -11,7 +11,7 @@ function setPrevNextOnClic(elem, id){
 
 }
 //----------------------------------------------------------------------------------------------
-function loadIGPost(event,id) {
+function loadIGPost(id) {
 
   // console.log("loadIGPost "+ id);
   // console.log(event);
@@ -55,6 +55,14 @@ function loadIGPost(event,id) {
   }
   setPrevNextOnClic(document.getElementById("ig_nav_prev"),ig.attributes.ig_prev_id);
   setPrevNextOnClic(document.getElementById("ig_nav_next"),ig.attributes.ig_next_id);
+  document.getElementById("ig_post_caption_txt").innerHTML = ig.alt;
+  // ig_link = document.createElement("a");
+  // ig_link.setAttribute("href", ig.attributes.ig_link.nodeValue);
+  // ig_link.innerHTML = "Ver en Instagram";
+
+  document.getElementById("ig_link").href = ig.attributes.ig_link.nodeValue;
+
+  document.getElementsByTagName("BODY")[0].style.overflow = "hidden";
 
   // var xmlhttp = new XMLHttpRequest();
   // xmlhttp.onreadystatechange = function() {
@@ -74,11 +82,13 @@ function loadIGPost(event,id) {
 function ig_post_close_lightbox(event){
   var ig_post = document.getElementById("ig_post");
   if(ig_post.style.display != "none") {
-    if(event.originalTarget.attributes.id.nodeValue == "ig_post"){
+    if(event.originalTarget.attributes.id.nodeValue == "ig_post" ||
+       event.originalTarget.attributes.id.nodeValue == "ig_post_close_btn"){
       // console.log("ig_post_on_click");
       // console.log(event);
       ig_post.style.display = "none";
       ig_post.style.cursor = "default";
+      document.getElementsByTagName("BODY")[0].style.overflow = "auto";
       var igp = document.getElementById("ig_post_in");
       var ig_lb = document.getElementById("ig_post_lightbox");
       if(ig_lb){
@@ -92,9 +102,9 @@ function igCallback(myObj) {
   var ig = document.getElementById("ig");
   var len = myObj.data.length;
   for (i = 0; i < len; i+= 3) {
-    dv = document.createElement("div");
-    // dv.width = (360*3)+"px";
-    dv.setAttribute("class", "ig_grid_line")
+    ig_line = document.createElement("div");
+    // ig_line.width = (360*3)+"px";
+    ig_line.setAttribute("class", "ig_grid_line")
 
     for(j = 0; j < 3 && j+i < len; j++){
         img = document.createElement("img");
@@ -114,24 +124,26 @@ function igCallback(myObj) {
           img.setAttribute("ig_width", myObj.data[j+i].images.standard_resolution.width);
           img.setAttribute("ig_height", myObj.data[j+i].images.standard_resolution.height);
         }
+        img.setAttribute("alt", myObj.data[i].caption.text);
+        img.setAttribute("ig_link", myObj.data[i].link);
 
-        img.setAttribute("onclick","loadIGPost(event, \"ig_post_thumb_"+(j+i)+"\")");
+        img.setAttribute("onclick","loadIGPost(\"ig_post_thumb_"+(j+i)+"\")");
         if(j+i > 0){
           img.setAttribute("ig_prev_id", "ig_post_thumb_"+(j+i -1));
         }
         if(j+i < len - 1){
           img.setAttribute("ig_next_id", "ig_post_thumb_"+(j+i +1));
         }
-        dv.appendChild(img);
+        ig_line.appendChild(img);
     }
 
-        gpc = document.createElement("div");
-        gpc.setAttribute("class", "grid-post-content");
-        spt = document.createElement("span");
-        spt.setAttribute("class", "ig-post-title");
-        spt.innerHTML = myObj.data[i].caption.text;
-        gpc.appendChild(spt);
-        dv.appendChild(gpc);
-    ig.appendChild(dv);
+        // gpc = document.createElement("div");
+        // gpc.setAttribute("class", "grid-post-content");
+        // spt = document.createElement("span");
+        // spt.setAttribute("class", "ig-post-title");
+        // spt.innerHTML = myObj.data[i].caption.text;
+        // gpc.appendChild(spt);
+        // ig_line.appendChild(gpc);
+    ig.appendChild(ig_line);
   }
 }

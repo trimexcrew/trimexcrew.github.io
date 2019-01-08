@@ -204,6 +204,11 @@ footer {
    }
  }
 
+#proyectos, #recientes{
+  font-weight:900;
+  font-size: 20px;
+  padding-top: 20px;
+}
 a.older-posts, a.newer-posts {
   display: inline-block;
   color: $body-color;
