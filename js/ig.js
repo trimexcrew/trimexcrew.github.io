@@ -1,100 +1,116 @@
 //----------------------------------------------------------------------------------------------
 function setPrevNextOnClic(elem, id){
   if(id){
+    return "<img class=\"ig_boton_nav\" width=\"50\" height=\"45\" src=\"/assets/lightbox_gui_images/"+elem+".png\" id=\"ig_nav_"+elem+"\" onclick=\"loadIGPost(&quot;"+id.nodeValue+"&quot;)\"></img>";
     // console.log("setPrevNextOnClic  " + id.nodeValue);
-    elem.setAttribute("onclick","loadIGPost( \""+id.nodeValue+"\")");
-    elem.style.display = "inherit";
+    // elem.setAttribute("onclick","loadIGPost( \""+id.nodeValue+"\")");
+    // elem.style.display = "inherit";
   }else{
-    elem.style.display = "none";
-    elem.removeAttribute("onclick");
+    return "";
+    // elem.style.display = "none";
+    // elem.removeAttribute("onclick");
   }
 
 }
 //----------------------------------------------------------------------------------------------
 function loadIGPost(id) {
 
-  // console.log("loadIGPost "+ id);
-  // console.log(event);
+  var html =
+  "<div id=\"ig_post_in\">\
+  <img class=\"ig_boton_nav\" width=\"27\" height=\"27\" src=\"/assets/lightbox_gui_images/close.png\" id=\"ig_post_close_btn\" onclick=\"ig_post_close_lightbox_btn()\"></img>";
+
+
+// "ig_post_thumb_"+
   var ig = document.getElementById(id);
-  var ig_post = document.getElementById("ig_post");
-  ig_post.style.display = "flex";
-  ig_post.style.cursor = "pointer";
-  var igp = document.getElementById("ig_post_in");
-  // igp.css("width","0");
-  // igp.css("height","0");
-  // igp.animate({
-  //   width: '100%',
-  //   height: '100%'
-  // }, 500);
-  // while (igp.firstChild) {
-  var ig_lb = document.getElementById("ig_post_lightbox");
-  if(ig_lb){
-    igp.removeChild(ig_lb);
-  }
+  // var ig_post = document.getElementById("ig_post");
+
+  // var ig_lb = document.getElementById("ig_post_lightbox");
+  //
+  // if(ig_lb){
+    // igp.removeChild(ig_lb);
+  // }
 
   if(ig.attributes.ig_tipo.nodeValue == "video"){
-    vid = document.createElement("video");
-    // vid.autoplay = true;
-    vid.controls = true;
-    vid.setAttribute("id", "ig_post_lightbox");
-    vid.setAttribute("src", ig.attributes.ig_src.nodeValue);
-    vid.setAttribute("width", ig.attributes.ig_width.nodeValue);
-    vid.setAttribute("height", ig.attributes.ig_height.nodeValue);
-    // igp.appendChild(vid);
-    vid.setAttribute("style","width: 100%;  height: auto;");
-    igp.insertBefore(vid, document.getElementById("ig_nav"));
+    html += "<video controls "
   }else{
-    img = document.createElement("img");
-    img.setAttribute("id", "ig_post_lightbox");
-    img.setAttribute("src", ig.attributes.ig_src.nodeValue);
-    img.setAttribute("width", ig.attributes.ig_width.nodeValue);
-    img.setAttribute("height", ig.attributes.ig_height.nodeValue);
-    img.setAttribute("style","width: 100%; height: auto;");
-    // igp.appendChild(img);
-    igp.insertBefore(img, document.getElementById("ig_nav"));
+    html += "<img";
   }
-  setPrevNextOnClic(document.getElementById("ig_nav_prev"),ig.attributes.ig_prev_id);
-  setPrevNextOnClic(document.getElementById("ig_nav_next"),ig.attributes.ig_next_id);
-  document.getElementById("ig_post_caption_txt").innerHTML = ig.alt;
-  // ig_link = document.createElement("a");
-  // ig_link.setAttribute("href", ig.attributes.ig_link.nodeValue);
-  // ig_link.innerHTML = "Ver en Instagram";
+    // vid = document.createElement("video");
+    // vid.controls = true;
+    html+= " id=\"ig_post_lightbox\"";
+    html+= " src=\"" +ig.attributes.ig_src.nodeValue + "\"";
+    html+= " width=\"" +ig.attributes.ig_width.nodeValue + "\"";
+    html+= " height=\"" +ig.attributes.ig_height.nodeValue + "\"";
 
-  document.getElementById("ig_link").href = ig.attributes.ig_link.nodeValue;
+    if(ig.attributes.ig_tipo.nodeValue == "video"){
+      html+= "></video>";
+    }else{
+      html+= "></img>";
+    }
 
-  document.getElementsByTagName("BODY")[0].style.overflow = "hidden";
+    // igp.insertBefore(vid, document.getElementById("ig_nav"));
 
-  // var xmlhttp = new XMLHttpRequest();
-  // xmlhttp.onreadystatechange = function() {
-  //   if (this.readyState == 4 && this.status == 200) {
-  //     var json = JSON.parse(this.responseText);
-  //     var ig_post = document.getElementById("ig_post");
-  //     // ig_post.style.display = "flex";
-  //     ig_post.style.cursor = "pointer";
-  //     ig_post.innerHTML = json.html;
-  //     window.instgrm.Embeds.process();
-  //   }
-  // };
-  // xmlhttp.open("GET", "https://api.instagram.com/oembed?url="+ig.id, true);
-  // xmlhttp.send();
+
+    // img.setAttribute("id", "ig_post_lightbox");
+    // img.setAttribute("src", ig.attributes.ig_src.nodeValue);
+    // img.setAttribute("width", ig.attributes.ig_width.nodeValue);
+    // img.setAttribute("height", ig.attributes.ig_height.nodeValue);
+    // igp.insertBefore(img, document.getElementById("ig_nav"));
+  // }
+  // setPrevNextOnClic(document.getElementById("ig_nav_prev"),ig.attributes.ig_prev_id);
+  // setPrevNextOnClic(document.getElementById("ig_nav_next"),ig.attributes.ig_next_id);
+
+  // document.getElementById("ig_post_caption_txt").innerHTML = ig.alt;
+
+  // document.getElementById("ig_link").href = ig.attributes.ig_link.nodeValue;
+
+
+html+=  "<div id=\"ig_nav\">";
+html+=  setPrevNextOnClic("prev",ig.attributes.ig_prev_id);
+    html+= "<div id=\"ig_post_caption\">\
+      <div id=\"ig_post_caption_txt\">"+ ig.alt +"</div>\
+    <a href="+ ig.attributes.ig_link.nodeValue +" id=\"ig_link\">Ver en Instagram</a>\
+    </div>";
+    html+=  setPrevNextOnClic("next",ig.attributes.ig_next_id);
+html+= "</div></div>";
+var ig_post = document.getElementById("ig_post");
+ig_post.innerHTML = html;
+ig_post.style.display = "flex";
+ig_post.style.cursor = "pointer";
+
+ig_post.setAttribute("onclick","ig_post_close_lightbox(event)");
+
+
+document.getElementsByTagName("BODY")[0].style.overflow = "hidden";
+
+}
+//----------------------------------------------------------------------------------------------
+function ig_post_close_lightbox_btn(){
+  var ig_post = document.getElementById("ig_post");
+  ig_post.innerHTML = "";
+  ig_post.removeAttribute("onclick");
+  ig_post.style.display = "none";
+  ig_post.style.cursor = "default";
 }
 //----------------------------------------------------------------------------------------------
 function ig_post_close_lightbox(event){
   var ig_post = document.getElementById("ig_post");
-  if(ig_post.style.display != "none") {
+
+  if(ig_post.innerHTML != "") {
     if(event.originalTarget.attributes.id.nodeValue == "ig_post" ||
-       // event.originalTarget.attributes.id.nodeValue == "ig_nav_prev" ||
+       event.originalTarget.attributes.id.nodeValue == "ig_nav_prev" ||
        event.originalTarget.attributes.id.nodeValue == "ig_post_close_btn"){
-      // console.log("ig_post_on_click");
-      // console.log(event);
+         ig_post.innerHTML = "";
+         ig_post.removeAttribute("onclick");
+
       ig_post.style.display = "none";
       ig_post.style.cursor = "default";
-      document.getElementsByTagName("BODY")[0].style.overflow = "auto";
-      var igp = document.getElementById("ig_post_in");
-      var ig_lb = document.getElementById("ig_post_lightbox");
-      if(ig_lb){
-        igp.removeChild(ig_lb);
-      }
+      // document.getElementsByTagName("BODY")[0].style.overflow = "auto";
+      // var igp = document.getElementById("ig_post_in");
+      // var ig_lb = document.getElementById("ig_post_lightbox");
+      // if(ig_lb){
+      //   igp.removeChild(ig_lb);
+      // }
     }
   }
 }
