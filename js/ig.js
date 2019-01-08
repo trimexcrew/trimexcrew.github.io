@@ -41,7 +41,7 @@ function loadIGPost(id) {
     vid.setAttribute("width", ig.attributes.ig_width.nodeValue);
     vid.setAttribute("height", ig.attributes.ig_height.nodeValue);
     // igp.appendChild(vid);
-    vid.setAttribute("style","width: 100%");
+    vid.setAttribute("style","width: 100%;  height: auto;");
     igp.insertBefore(vid, document.getElementById("ig_nav"));
   }else{
     img = document.createElement("img");
@@ -49,7 +49,7 @@ function loadIGPost(id) {
     img.setAttribute("src", ig.attributes.ig_src.nodeValue);
     img.setAttribute("width", ig.attributes.ig_width.nodeValue);
     img.setAttribute("height", ig.attributes.ig_height.nodeValue);
-    img.setAttribute("style","width: 100%");
+    img.setAttribute("style","width: 100%; height: auto;");
     // igp.appendChild(img);
     igp.insertBefore(img, document.getElementById("ig_nav"));
   }
@@ -83,6 +83,7 @@ function ig_post_close_lightbox(event){
   var ig_post = document.getElementById("ig_post");
   if(ig_post.style.display != "none") {
     if(event.originalTarget.attributes.id.nodeValue == "ig_post" ||
+       // event.originalTarget.attributes.id.nodeValue == "ig_nav_prev" ||
        event.originalTarget.attributes.id.nodeValue == "ig_post_close_btn"){
       // console.log("ig_post_on_click");
       // console.log(event);
