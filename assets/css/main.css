@@ -1526,7 +1526,7 @@ a.newer-posts:hover {
     margin-bottom: 10px;
   }
   .content-box {
-    padding: 0px 10px;
+    padding: 0px;
   }
   .contact-title, .copyright {
     display: none;
@@ -1540,6 +1540,10 @@ a.newer-posts:hover {
 @media only screen and (max-width: 480px) {
   body {
     font-size: 12px;
+  }
+  .ig_grid_post {
+    width: 100%;
+    height: auto;
   }
   .sidebar {
     display: none;

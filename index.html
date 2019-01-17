@@ -31,10 +31,7 @@ layout: main
 <div class="posts">
 
   {% for post in paginator.posts %}
-  {% capture add_grid_line %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
-  {% if  add_grid_line == '0' %}
-  <div class="ig_grid_line">
-    {% endif %}
+
     <div class="ig_grid_post" >
       <a href="{{post.url | prepend: site.baseurl}}">
         <img src={% include post_img.html post=post %} onclick="window.location='{{post.url | prepend: site.baseurl}}';" />
@@ -44,15 +41,12 @@ layout: main
         </div> -->
       </a>
     </div>
-    {% if  add_grid_line == '2' %}
-  </div>
-  {% endif %}
   {% endfor %}
 </div>
 
 {% include pagination.html %}
 {% if paginator.page == 1 %}
-<script src="https://api.instagram.com/v1/users/self/media/recent?access_token=529774806.22bb494.d445d962758b49beb8e59da206354fa4&callback=igCallback&count=24&omitscript=true"></script>
+<script src="https://api.instagram.com/v1/users/self/media/recent?access_token=529774806.22bb494.d445d962758b49beb8e59da206354fa4&callback=igCallback&count=18&omitscript=true"></script>
 {% endif %}
 <footer class="footer_moviles">
 {% include footer.html %}
