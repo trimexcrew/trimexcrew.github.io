@@ -3,7 +3,8 @@ function setPrevNextOnClic(elem, id){
   if(id){
     return "<img class=\"ig_boton_nav\" width=\"50\" height=\"45\" src=\"/assets/lightbox_gui_images/"+elem+".png\" id=\"ig_nav_"+elem+"\" onclick=\"loadIGPost(&quot;"+id.nodeValue+"&quot;)\"></img>";
   }else{
-    return "";
+    return "<div style=\"width:50px; height:50px; min-width:50px;\"></div>";
+    // return "";
   }
 }
 //----------------------------------------------------------------------------------------------
@@ -42,7 +43,7 @@ function loadIGPost(id) {
   var ig_post = document.getElementById("ig_post");
   ig_post.innerHTML = html;
   ig_post.style.display = "flex";
-  ig_post.style.cursor = "pointer";
+  ig_post.style.cursor = "default";
 
   ig_post.setAttribute("onclick","ig_post_close_lightbox(event)");
 
@@ -50,27 +51,33 @@ function loadIGPost(id) {
   document.getElementsByTagName("BODY")[0].style.overflow = "hidden";
 
 }
-//----------------------------------------------------------------------------------------------
-function ig_post_close_lightbox_btn(){
-  var ig_post = document.getElementById("ig_post");
+function ig_post_close(ig_post){
+
   ig_post.innerHTML = "";
   ig_post.removeAttribute("onclick");
   ig_post.style.display = "none";
   ig_post.style.cursor = "default";
+  document.getElementsByTagName("BODY")[0].style.overflow = "visible";
+}
+//----------------------------------------------------------------------------------------------
+function ig_post_close_lightbox_btn(){
+
+  var ig_post = document.getElementById("ig_post");
+  ig_post_close(ig_post);
 }
 //----------------------------------------------------------------------------------------------
 function ig_post_close_lightbox(event){
   var ig_post = document.getElementById("ig_post");
-
   if(ig_post.innerHTML != "") {
     if(event.originalTarget.attributes.id.nodeValue == "ig_post" ||
-    event.originalTarget.attributes.id.nodeValue == "ig_nav_prev" ||
     event.originalTarget.attributes.id.nodeValue == "ig_post_close_btn"){
-      ig_post.innerHTML = "";
-      ig_post.removeAttribute("onclick");
-      
-      ig_post.style.display = "none";
-      ig_post.style.cursor = "default";
+
+      ig_post_close(ig_post);
+      // ig_post.innerHTML = "";
+      // ig_post.removeAttribute("onclick");
+      // ig_post.style.display = "none";
+      // ig_post.style.cursor = "default";
+      // document.getElementsByTagName("BODY")[0].style.overflow = "visible";
     }
   }
 }
