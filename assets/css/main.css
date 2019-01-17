@@ -1462,6 +1462,9 @@ a.newer-posts:hover {
   .sidebar {
     display: none;
   }
+  .paginator {
+    padding-bottom: 20px;
+  }
   .grid-post-content {
     top: -20px;
     position: relative;
@@ -1484,7 +1487,12 @@ a.newer-posts:hover {
             order: 2;
   }
   .footer_moviles {
+    background-color: black;
     display: inherit;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
   .somos .trimex {
     width: -webkit-calc(100% - 100px);

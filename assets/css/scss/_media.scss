@@ -3,6 +3,10 @@
   .sidebar {
     display: none;
   }
+  .paginator{
+    padding-bottom: 20px;
+
+  }
   .grid-post-content {
     top:-20px;
     position: relative;
@@ -15,7 +19,12 @@
     }
   }
   .footer_moviles{
+    background-color: black;
     display: inherit;
+    position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
   }
   .somos{
     .trimex{
