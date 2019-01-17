@@ -1547,6 +1547,9 @@ a.newer-posts:hover {
   .ig_grid_post {
     width: 100%;
     height: auto;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
   }
   .sidebar {
     display: none;
