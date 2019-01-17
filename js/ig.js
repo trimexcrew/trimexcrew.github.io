@@ -86,8 +86,8 @@ function igCallback(myObj) {
   var ig = document.getElementById("ig");
   var len = myObj.data.length;
   for (i = 0; i < len; i+= 3) {
-    ig_line = document.createElement("div");
-    ig_line.setAttribute("class", "ig_grid_line")
+    // ig_line = document.createElement("div");
+    // ig_line.setAttribute("class", "ig_grid_line")
 
     for(j = 0; j < 3 && j+i < len; j++){
       img = document.createElement("img");
@@ -117,8 +117,9 @@ function igCallback(myObj) {
       if(j+i < len - 1){
         img.setAttribute("ig_next_id", "ig_post_thumb_"+(j+i +1));
       }
-      ig_line.appendChild(img);
+      // ig_line.appendChild(img);
+      ig.appendChild(img);
     }
-    ig.appendChild(ig_line);
+    // ig.appendChild(ig_line);
   }
 }
