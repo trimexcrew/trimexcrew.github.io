@@ -154,9 +154,11 @@ pre {
 }
 
 /* - - - - - - - - - - logo - - - - - - - - - - */
+.logo{
+  padding: 40px;
+}
 .logo2{
 display: none;
-
 }
 .trimex_flex{
   display: flex;
@@ -165,7 +167,31 @@ display: none;
   width: 100%;
 
 }
+/* - - - - - - - - - - links - - - - - - - - - - */
+a:link, a:visited, a:hover, a:active  {
+  text-decoration: none;
+  font-weight: bold;
+}
+/* unvisited link */
+a:link {
+  color:red;
+}
 
+/* visited link */
+a:visited {
+  color: green;
+  color:orange;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
 /* - - - - - - - - - - Instagram feed styles - - - - - - - - - - */
 @import 'ig-post';
 

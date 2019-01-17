@@ -30,12 +30,16 @@
 #ig_post_close_btn{
   padding-top: 5px;
   padding-left: 5px;
+  margin-top: 10px;
+
+  margin-bottom: 10px;
 }
 
 .ig_boton_nav{
      opacity: 0.4;
      transition: opacity .25s ease-in-out;
      &:hover {
+       cursor: pointer;
         opacity: 1;
     }
 }
@@ -55,7 +59,7 @@
   height: 100%;
   background-color: rgba(0,0,0, 0.7);
   display: none;
-  
+
   justify-content: center;
   align-items: center;
   z-index:100;
@@ -63,8 +67,8 @@
 }
 #ig_post_in{
   max-width: 658px;
-  max-height: 658px;
-  width: calc(100% - 2px);
+  // max-height: 658px;
+  // width: calc(100% - 2px);
   height:  calc(100% - 2px);
   // min-width: 300px;
   // min-height: 300px;
@@ -76,4 +80,17 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+#ig_post_caption{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  a{
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+#ig_nav_next, #ig_nav_prev{
+  padding-top: 10px;
 }

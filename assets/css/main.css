@@ -784,6 +784,10 @@ pre code {
 }
 
 /* - - - - - - - - - - logo - - - - - - - - - - */
+.logo {
+  padding: 40px;
+}
+
 .logo2 {
   display: none;
 }
@@ -803,6 +807,33 @@ pre code {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+}
+
+/* - - - - - - - - - - links - - - - - - - - - - */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+  color: orange;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }
 
 /* - - - - - - - - - - Instagram feed styles - - - - - - - - - - */
@@ -864,6 +895,8 @@ pre code {
 #ig_post_close_btn {
   padding-top: 5px;
   padding-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .ig_boton_nav {
@@ -874,6 +907,7 @@ pre code {
 }
 
 .ig_boton_nav:hover {
+  cursor: pointer;
   opacity: 1;
 }
 
@@ -908,9 +942,6 @@ pre code {
 
 #ig_post_in {
   max-width: 658px;
-  max-height: 658px;
-  width: -webkit-calc(100% - 2px);
-  width: calc(100% - 2px);
   height: -webkit-calc(100% - 2px);
   height: calc(100% - 2px);
   display: block;
@@ -928,6 +959,22 @@ pre code {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+
+#ig_post_caption {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+#ig_post_caption a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#ig_nav_next, #ig_nav_prev {
+  padding-top: 10px;
 }
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
@@ -949,7 +996,7 @@ pre code {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 240px;
+  width: 180px;
   height: 100%;
   padding: 10px 10px;
   background-color: #000000;
@@ -1062,7 +1109,7 @@ pre code {
 }
 
 .content-box {
-  padding: 0px 0px 0px 260px;
+  padding: 0px 0px 0px 200px;
 }
 
 .contact .contact-title {
@@ -1410,7 +1457,7 @@ a.newer-posts:hover {
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Small Devices, Tablets */
-@media only screen and (max-width: 1010px) {
+@media only screen and (max-width: 950px) {
   .sidebar {
     display: none;
   }
@@ -1452,6 +1499,7 @@ a.newer-posts:hover {
   .logo2 {
     display: inherit;
     width: 200px;
+    padding-top: 30px;
   }
   .about {
     text-align: center;
@@ -1483,6 +1531,10 @@ a.newer-posts:hover {
   }
   .logo2 {
     width: 120px;
+  }
+  .somos {
+    min-height: -webkit-calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
   }
   .post {
     width: 100%;
