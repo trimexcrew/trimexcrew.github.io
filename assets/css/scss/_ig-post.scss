@@ -25,7 +25,8 @@
    width:100%;
    margin: 0px auto;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
+   flex-wrap: wrap;
  }
 #ig_post_close_btn{
   padding-top: 5px;
