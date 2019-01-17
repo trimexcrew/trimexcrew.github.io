@@ -856,7 +856,7 @@ a:active {
 
 .ig_grid_post {
   width: 33.3%;
-  height: 100%;
+  height: auto;
   cursor: pointer;
   position: relative;
   display: inline-block;
