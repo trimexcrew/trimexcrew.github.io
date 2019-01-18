@@ -707,6 +707,7 @@ pre code {
 
 .page-content {
   max-width: 900px;
+  margin: 0px auto;
 }
 
 .img_poster {
