@@ -16,4 +16,4 @@ Registro video: [**Rai Barros**](https://www.instagram.com/rai.barros)
 
 Agradecimientos:
 * [Colmado](https://www.instagram.com/colmadocoffee) por el espacio
-* [AudioBox](audiobox.cl) por los equipos
+* [AudioBox](https://www.audiobox.cl) por los equipos
